@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+    font-family: Poppins;
+    height: 100vh;
+    width: 100vw;
+}
+.container {
+    display: flex;
+}
+aside {
+    display: flex;
+    flex-direction: column;
+    padding-left: 38px;
+    width: 260px;
+    background-color: #F8F8FF;
+    height: 100%;
+    position: relative;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    bottom: 2em;
+    gap: 1em;
+    color:#62618F;
+}
+
+.main-container p {
+    color:#62618F;
+}
+.main-container h5
+aside p {
+    color:#62618F;
+}
+aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+aside li{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.personal-info {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    padding: 2em 0;
+    
+}
+
+.identification {
+    flex-direction: column;
+}
+
+.avatar {
+    width: 55px;
+    border-radius: 17px;
+}
+
+.menu {
+    justify-content: space-around;
+    height: auto;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "main main right-container";
+    padding: 2em;
+}
+
+main header {
+    grid-area: header;
+    font-family: Poppins;
+    margin-bottom: 2em;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    ;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+a { 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #EE6338;
+}
+
+
+button {
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    width: fit-content;
+    border: 1px solid #CBCBD9;
+    background-color: #FFFFFF;
+}
+
+.main-container {
+    display: flex;
+    grid-area: main;
+    gap: 2em 0em;
+    flex-direction: column;
+}
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em 0em;
+    padding-top: 2em;
+}
+
+.card-info p {
+   color: #1A194D;
+   font-weight: 500; 
+}
+
+.visa {
+    width: 87px;
+    border: 1px solid #CBCBD9;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.right-container{
+    display: flex;
+    grid-area: right-container;
+    justify-content: center;
+}
+
+.right-container button {
+    border-radius: 8px;
+    padding: 8px 16px 8px 16px;
+    width: fit-content;
+    border: 1px solid #CBCBD9;
+    color: #FFFFFF;
+    background-color: #EE6338;
+}
+.plan-box{
+    color: #FFFFFF;
+    border-radius: 16px;
+    padding: 16px;
+    background-color: #EE6338;
+    height: fit-content;
+}
